@@ -3,67 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arth</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 850px;
-            margin: auto;
-            padding: 40px 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1 { font-size: 2.5em; color: #2c3e50; }
-        h2 { margin-top: 30px; color: #34495e; }
-        a { color: #007acc; text-decoration: none; }
-    </style>
+    <title>Arth | Computational Biology Portfolio</title>
+    <meta
+        name="description"
+        content="Arth's professional portfolio featuring projects, work experience, writing, and extracurricular leadership in computational biology and machine learning."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html">Arth</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" aria-label="Primary">
+                <a class="active" href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Work Ex</a>
+                <a href="blog.html">Blog</a>
+                <a href="extracurriculars.html">Extracurriculars</a>
+            </nav>
+        </header>
 
-<h1>Arth</h1>
-<p><b>Computational Biology | Machine Learning | Bioinformatics</b></p>
+        <main>
+            <section class="hero">
+                <div class="eyebrow">Application-ready personal website</div>
+                <div class="hero-grid">
+                    <div>
+                        <p class="hero-kicker">Computational Biology, Machine Learning, Bioinformatics</p>
+                        <h1>Research-driven work, presented with the clarity of a polished professional portfolio.</h1>
+                        <p class="hero-copy">
+                            I am a computational biology graduate student focused on building robust machine learning
+                            systems for genomics, single-cell analysis, and protein modeling. This site is designed to
+                            give hiring teams a clean view of my work, writing, and leadership.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="projects.html">View Projects</a>
+                            <a class="button button-secondary" href="experience.html">See Experience</a>
+                        </div>
+                    </div>
 
-<p>
-I am a graduate student in computational biology focused on applying machine learning
-to genomics and biological data. My work spans active learning, single-cell analysis,
-and protein modeling.
-</p>
+                    <aside class="profile-card">
+                        <div class="profile-top">
+                            <p class="profile-label">Currently focused on</p>
+                            <ul class="pill-list">
+                                <li>Applied ML for biology</li>
+                                <li>Single-cell analytics</li>
+                                <li>Protein modeling</li>
+                            </ul>
+                        </div>
 
-<h2>Projects</h2>
+                        <div class="profile-details">
+                            <div>
+                                <p class="detail-label">Email</p>
+                                <a href="mailto:your@email.com">your@email.com</a>
+                            </div>
+                            <div>
+                                <p class="detail-label">GitHub</p>
+                                <a href="https://github.com/Arth-DEVOPS" target="_blank" rel="noreferrer">github.com/Arth-DEVOPS</a>
+                            </div>
+                            <div>
+                                <p class="detail-label">Resume</p>
+                                <a href="Arth_Banka_Resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
 
-<ul>
-    <li>
-        <b>Active Learning for Transcriptomic Diagnostics</b><br>
-        Developed batch-mode active learning methods achieving ~96% accuracy while using
-        ~40% fewer labeled samples.
-    </li>
+            <section class="section-block" id="about">
+                <div class="section-heading">
+                    <p class="section-label">About</p>
+                    <h2>A concise introduction for recruiters, collaborators, and hiring managers.</h2>
+                </div>
 
-    <li>
-        <b>Contact Map Prediction using Deep Learning</b><br>
-        Built neural network models on protein embeddings to predict structural contact maps.
-    </li>
+                <div class="split-panel">
+                    <div class="panel prose-panel">
+                        <p>
+                            My work sits at the intersection of machine learning, biological data, and scientific
+                            computing. I enjoy translating high-dimensional datasets into clear modeling pipelines and
+                            practical research insights.
+                        </p>
+                        <p>
+                            Across coursework and research projects, I have worked on active learning for diagnostics,
+                            deep learning for structural biology, and scalable methods for transcriptomic analysis. I
+                            care equally about technical rigor, communication, and building tools that people can
+                            actually use.
+                        </p>
+                    </div>
 
-    <li>
-        <b>Single-cell RNA-seq Analysis</b><br>
-        Compared sketching and clustering techniques for large-scale transcriptomic datasets.
-    </li>
+                    <div class="panel stats-panel">
+                        <div class="stat-card">
+                            <span>Core strengths</span>
+                            <strong>ML modeling, genomics, analysis pipelines</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>What this site highlights</span>
+                            <strong>Projects, experience, writing, and leadership beyond classwork</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span>Best next step</span>
+                            <strong>Update the placeholders with your exact roles, dates, links, and published writing</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <li>
-        <b>Protein Design Pipeline</b><br>
-        Integrated RFdiffusion, ProteinMPNN, and AlphaFold for generative protein design.
-    </li>
-</ul>
+            <section class="section-block">
+                <div class="section-heading">
+                    <p class="section-label">Quick Access</p>
+                    <h2>Four sections built for a strong first impression during job applications.</h2>
+                </div>
 
-<h2>Resume</h2>
-<p><a href="resume.pdf" target="_blank">Download Resume</a></p>
+                <div class="feature-grid">
+                    <a class="feature-card" href="projects.html">
+                        <p class="card-tag">Projects</p>
+                        <h3>Technical case studies</h3>
+                        <p>Show modeling work, research depth, and measurable outcomes with a portfolio-style layout.</p>
+                    </a>
 
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-<p>
-    <a href="https://github.com/Arth-DEVOPS">GitHub</a>
-</p>
+                    <a class="feature-card" href="experience.html">
+                        <p class="card-tag">Work Ex</p>
+                        <h3>Professional credibility</h3>
+                        <p>Present internships, assistantships, lab roles, and impact summaries in a clean timeline.</p>
+                    </a>
 
+                    <a class="feature-card" href="blog.html">
+                        <p class="card-tag">Blog</p>
+                        <h3>Thoughtful communication</h3>
+                        <p>Share technical writing, project explainers, or reflections that prove depth beyond bullet points.</p>
+                    </a>
+
+                    <a class="feature-card" href="extracurriculars.html">
+                        <p class="card-tag">Extracurriculars</p>
+                        <h3>Leadership beyond coursework</h3>
+                        <p>Highlight teaching, clubs, mentoring, competitions, and community involvement in one place.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Built for professional visibility, applications, and clean storytelling.</p>
+            <div class="footer-links">
+                <a href="mailto:your@email.com">Email</a>
+                <a href="https://github.com/Arth-DEVOPS" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="Arth_Banka_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
