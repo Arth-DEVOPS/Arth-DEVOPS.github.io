@@ -27,7 +27,7 @@
             <nav class="site-nav" aria-label="Primary">
                 <a href="index.html">Home</a>
                 <a class="active" href="projects.html">Projects</a>
-                <a href="experience.html">Work Ex</a>
+                <a href="experience.html">Experience</a>
                 <a href="blog.html">Blog</a>
                 <a href="extracurriculars.html">Extracurriculars</a>
             </nav>
@@ -38,87 +38,73 @@
                 <p class="section-label">Projects</p>
                 <h1>Selected technical work with research context and practical outcomes.</h1>
                 <p class="page-intro">
-                    These projects are presented as portfolio case studies so hiring teams can quickly understand the
-                    problem, methods, and signal of impact.
+                    These projects come directly from my recent computational biology work and are framed so hiring
+                    teams can quickly understand the problem, method, and signal of impact.
                 </p>
             </section>
 
             <section class="stacked-grid">
                 <article class="case-card">
                     <div class="case-meta">
-                        <span>Machine Learning</span>
-                        <span>Diagnostics</span>
+                        <span>NGS Analysis</span>
+                        <span>Regulatory Genomics</span>
                     </div>
-                    <h2>Active Learning for Transcriptomic Diagnostics</h2>
+                    <h2>Super Enhancer and RNA-Binding Protein Interaction Analysis</h2>
                     <p>
-                        Developed batch-mode active learning strategies for transcriptomic classification, achieving
-                        roughly 96% accuracy while reducing labeled sample requirements by around 40%.
+                        Processed and analyzed large-scale eCLIP, ChIP-seq, RNA-seq, ATAC-seq, and conservation
+                        datasets from ENCODE and NCBI to interrogate enhancer-RBP interactions across roughly 700
+                        genomic loci.
                     </p>
                     <ul class="detail-list">
-                        <li>Focused on label efficiency and robust classifier performance.</li>
-                        <li>Position this project with dataset size, model family, and evaluation metrics.</li>
-                        <li>Add a GitHub or poster link here when available.</li>
-                    </ul>
-                </article>
-
-                <article class="case-card">
-                    <div class="case-meta">
-                        <span>Deep Learning</span>
-                        <span>Proteins</span>
-                    </div>
-                    <h2>Contact Map Prediction Using Deep Learning</h2>
-                    <p>
-                        Built deep learning models on protein embeddings to predict structural contact maps and explore
-                        how learned sequence representations transfer into downstream structural tasks.
-                    </p>
-                    <ul class="detail-list">
-                        <li>Good place to mention architectures, embeddings, and training setup.</li>
-                        <li>Consider including sample outputs or benchmark comparisons.</li>
-                        <li>Add repository, report, or slides once ready.</li>
+                        <li>Observed about 30% concordance between ChIP and eCLIP peaks in top super enhancers.</li>
+                        <li>Built a reproducible end-to-end bioinformatics pipeline for QC, alignment, peak calling, annotation, and visualization.</li>
+                        <li>Used Bedtools, bigWig utilities, and the UCSC Genome Browser to support scalable downstream reporting.</li>
                     </ul>
                 </article>
 
                 <article class="case-card">
                     <div class="case-meta">
                         <span>Single-Cell</span>
-                        <span>Scalability</span>
+                        <span>Benchmarking</span>
                     </div>
-                    <h2>Single-cell RNA-seq Analysis</h2>
+                    <h2>Sketch-Based Analysis of scRNA-seq Data</h2>
                     <p>
-                        Compared sketching, clustering, and downstream analysis strategies for large-scale
-                        transcriptomic datasets with an emphasis on balancing fidelity and compute cost.
+                        Engineered and benchmarked six sketching strategies on a 68k PBMC single-cell RNA-seq dataset
+                        to evaluate rare cell capture and transcriptional diversity retention under aggressive
+                        subsampling.
                     </p>
                     <ul class="detail-list">
-                        <li>Highlight the dataset scale and tooling stack you used.</li>
-                        <li>Useful section for visualizations or key biological findings.</li>
-                        <li>Add links to notebooks, dashboards, or figures if available.</li>
+                        <li>Compared uniform, geometric, k-means, kernel herding, hashing, and PCA-guided sketching approaches.</li>
+                        <li>Built a variance-aware PCA-guided method that reduced data volume by 90% while preserving all biological clusters.</li>
+                        <li>Recovered 172 of 193 rare cells, enabling scalable transcriptomic analysis on standard hardware.</li>
                     </ul>
                 </article>
 
                 <article class="case-card">
                     <div class="case-meta">
-                        <span>Generative Biology</span>
-                        <span>Pipeline Design</span>
+                        <span>Neurogenomics</span>
+                        <span>Machine Learning</span>
                     </div>
-                    <h2>Protein Design Pipeline</h2>
+                    <h2>Genomics and Epigenetics of the Brain</h2>
                     <p>
-                        Integrated RFdiffusion, ProteinMPNN, and AlphaFold into a streamlined workflow for generative
-                        protein design and downstream structural validation.
+                        Analyzed single-cell NGS datasets with Python and R to study neural epigenetic states through
+                        clustering, dimensionality reduction, transcription factor binding analysis, and statistical
+                        comparison.
                     </p>
                     <ul class="detail-list">
-                        <li>Strong candidate for an end-to-end pipeline diagram or workflow graphic.</li>
-                        <li>Mention orchestration, automation, or infrastructure decisions if relevant.</li>
-                        <li>Add links to code, reports, or demo outputs here.</li>
+                        <li>Conducted integrated analysis of neurons, astrocytes, oligodendrocytes, and microglial cells.</li>
+                        <li>Applied CNNs and SVMs to identify molecular and functional differences between neural cell types.</li>
+                        <li>Reached classification accuracy of 91% while linking patterns back to biological interpretation.</li>
                     </ul>
                 </article>
             </section>
         </main>
 
         <footer class="site-footer">
-            <p>Need more detail? Pair each project with links, dates, and one visual artifact.</p>
+            <p>Each project is framed as a case study so reviewers can see both the biology problem and the technical execution.</p>
             <div class="footer-links">
                 <a href="index.html">Home</a>
-                <a href="experience.html">Work Ex</a>
+                <a href="experience.html">Experience</a>
                 <a href="blog.html">Blog</a>
             </div>
         </footer>
