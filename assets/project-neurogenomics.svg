@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="neuroTitle">
+  <title id="neuroTitle">Neurogenomics placeholder visual</title>
+  <rect width="640" height="360" fill="#f8f6f2"/>
+  <rect x="40" y="42" width="560" height="276" rx="10" fill="#ffffff" stroke="#ded8cf"/>
+  <path d="M150 236c42-96 82-128 120-96 34 29 42 88 88 72 39-14 40-88 92-90 46-2 70 52 82 96" fill="none" stroke="#1f4d4c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M172 124l50 50m-50-50l-46 28m274-20l-36 56m36-56l66 28m-176 80l-48 48m48-48l72 40" stroke="#c06d4d" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="172" cy="124" r="16" fill="#d8a15f"/>
+  <circle cx="222" cy="174" r="13" fill="#d8a15f"/>
+  <circle cx="126" cy="152" r="12" fill="#d8a15f"/>
+  <circle cx="400" cy="132" r="15" fill="#d8a15f"/>
+  <circle cx="364" cy="188" r="12" fill="#d8a15f"/>
+  <circle cx="466" cy="160" r="13" fill="#d8a15f"/>
+  <text x="78" y="78" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f1d1a">Neural epigenetic state analysis</text>
+</svg>

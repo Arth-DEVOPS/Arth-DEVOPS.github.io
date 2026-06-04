@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="regTitle">
+  <title id="regTitle">Regulatory genomics placeholder visual</title>
+  <rect width="640" height="360" fill="#f6f8f7"/>
+  <rect x="40" y="42" width="560" height="276" rx="10" fill="#ffffff" stroke="#d6ddd9"/>
+  <path d="M78 104h484M78 158h484M78 212h484M78 266h484" stroke="#d8e0dc" stroke-width="2"/>
+  <path d="M102 104h72m44 0h140m38 0h82M96 158h128m36 0h76m58 0h130M116 212h94m42 0h188m34 0h50M90 266h164m48 0h88m40 0h110" stroke="#1f4d4c" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="500" cy="108" r="26" fill="#c06d4d"/>
+  <circle cx="430" cy="212" r="20" fill="#d8a15f"/>
+  <text x="78" y="78" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f1d1a">Enhancer and RBP interaction tracks</text>
+</svg>

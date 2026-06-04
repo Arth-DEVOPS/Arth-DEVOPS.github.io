@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="phyloTitle">
+  <title id="phyloTitle">Phylogenetics research placeholder visual</title>
+  <rect width="640" height="360" fill="#f6f7fb"/>
+  <rect x="40" y="42" width="560" height="276" rx="10" fill="#ffffff" stroke="#d8deea"/>
+  <path d="M142 268V106m0 76h96m0 0V112m0 70v72m124-4V114m0 72h110m0 0v-68m0 68v78M238 182h124" fill="none" stroke="#1f4d4c" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="142" cy="106" r="12" fill="#c06d4d"/>
+  <circle cx="238" cy="112" r="12" fill="#d8a15f"/>
+  <circle cx="238" cy="254" r="12" fill="#d8a15f"/>
+  <circle cx="362" cy="114" r="12" fill="#c06d4d"/>
+  <circle cx="472" cy="118" r="12" fill="#d8a15f"/>
+  <circle cx="472" cy="264" r="12" fill="#d8a15f"/>
+  <text x="78" y="78" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f1d1a">Phylogenetic tree-space search</text>
+</svg>

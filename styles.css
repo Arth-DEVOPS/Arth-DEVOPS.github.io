@@ -10,9 +10,9 @@
     --accent-soft: #e0ece7;
     --accent-warm: #c06d4d;
     --shadow: 0 24px 60px rgba(53, 41, 29, 0.12);
-    --radius-lg: 28px;
-    --radius-md: 20px;
-    --radius-sm: 14px;
+    --radius-lg: 18px;
+    --radius-md: 10px;
+    --radius-sm: 8px;
     --content-width: 1180px;
 }
 
@@ -84,14 +84,14 @@ img {
     margin-bottom: 26px;
     background: rgba(255, 251, 247, 0.74);
     border: 1px solid var(--border);
-    border-radius: 999px;
+    border-radius: var(--radius-lg);
     box-shadow: 0 18px 40px rgba(53, 41, 29, 0.08);
 }
 
 .brand {
     font-family: "Instrument Serif", serif;
     font-size: 2rem;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
 }
 
 .site-nav {
@@ -184,7 +184,7 @@ img {
 .detail-label,
 .timeline-date {
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0;
     font-size: 0.78rem;
 }
 
@@ -211,19 +211,19 @@ img {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     line-height: 1.02;
-    letter-spacing: -0.022em;
+    letter-spacing: 0;
     text-wrap: balance;
 }
 
 .hero h1 {
-    font-size: clamp(3.3rem, 6vw, 5.8rem);
-    max-width: 14ch;
+    font-size: 4.8rem;
+    max-width: 16ch;
 }
 
 .page-hero h1,
 .section-heading h2 {
-    font-size: clamp(2.4rem, 4vw, 4.1rem);
-    max-width: 18ch;
+    font-size: 3.25rem;
+    max-width: 22ch;
 }
 
 .hero-copy,
@@ -429,8 +429,19 @@ img {
     color: var(--accent-warm);
     font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0;
     text-transform: uppercase;
+}
+
+.visual-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(44, 41, 37, 0.08);
+    background: #fff;
 }
 
 .detail-list {
@@ -488,7 +499,7 @@ img {
 .org-lockup {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
 }
 
 .org-lockup-compact {
@@ -496,12 +507,12 @@ img {
 }
 
 .org-logo {
-    flex: 0 0 68px;
-    width: 68px;
-    height: 68px;
-    border-radius: 20px;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 14px 30px rgba(53, 41, 29, 0.12);
+    box-shadow: 0 8px 18px rgba(53, 41, 29, 0.12);
 }
 
 .org-logo img {
@@ -612,7 +623,7 @@ img {
     }
 
     .site-header {
-        border-radius: 30px;
+        border-radius: var(--radius-lg);
         padding: 16px 18px;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -646,15 +657,24 @@ img {
     }
 
     .org-logo {
-        width: 58px;
-        height: 58px;
-        flex-basis: 58px;
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
     }
 
     .hero h1,
     .page-hero h1,
     .section-heading h2 {
         max-width: none;
+    }
+
+    .hero h1 {
+        font-size: 3.1rem;
+    }
+
+    .page-hero h1,
+    .section-heading h2 {
+        font-size: 2.35rem;
     }
 }
 
