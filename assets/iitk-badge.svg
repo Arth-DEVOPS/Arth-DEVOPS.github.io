@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="iitkTitle">
+  <title id="iitkTitle">Indian Institute of Technology Kanpur badge</title>
+  <rect width="96" height="96" rx="24" fill="#244f3f"/>
+  <circle cx="48" cy="48" r="28" fill="none" stroke="#f2eadb" stroke-width="3"/>
+  <text x="48" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#f2eadb">IITK</text>
+  <text x="48" y="63" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#f2eadb">KANPUR</text>
+</svg>

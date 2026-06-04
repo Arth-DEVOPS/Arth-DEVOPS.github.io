@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="dalTitle">
+  <title id="dalTitle">Dalhousie University badge</title>
+  <rect width="96" height="96" rx="24" fill="#0f2f6b"/>
+  <circle cx="48" cy="48" r="27" fill="none" stroke="#eef3ff" stroke-width="3"/>
+  <text x="48" y="47" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#eef3ff">DAL</text>
+  <text x="48" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#eef3ff">HALIFAX</text>
+</svg>
