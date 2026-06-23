@@ -6,7 +6,7 @@
     <title>Projects | Arth</title>
     <meta
         name="description"
-        content="Selected computational biology, machine learning, and bioinformatics projects by Arth."
+        content="Selected machine learning, bioinformatics, robotics, and automation projects by Arth Banka."
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
                 <a href="index.html">Home</a>
                 <a class="active" href="projects.html">Projects</a>
                 <a href="experience.html">Experience</a>
-                <a href="blog.html">Blog</a>
+                <a href="publications.html">Publications</a>
                 <a href="extracurriculars.html">Extracurriculars</a>
             </nav>
         </header>
@@ -36,79 +36,164 @@
         <main>
             <section class="page-hero">
                 <p class="section-label">Projects</p>
-                <h1>Selected research and computational biology projects.</h1>
+                <h1>Machine learning, bioinformatics, and robotics projects.</h1>
                 <p class="page-intro">
-                    A focused set of projects from my work in regulatory genomics, single-cell analysis, and neural
-                    epigenetics.
+                    Work across applied ML, generative AI, computational biology, large-scale analysis, and autonomous systems.
                 </p>
             </section>
 
-            <section class="stacked-grid">
-                <article class="case-card">
-                    <img class="visual-thumb" src="assets/project-regulatory-genomics.svg" alt="Regulatory genomics project visual">
-                    <div class="case-meta">
-                        <span>NGS Analysis</span>
-                        <span>Regulatory Genomics</span>
-                    </div>
-                    <h2>Super Enhancer and RNA-Binding Protein Interaction Analysis</h2>
-                    <p>
-                        Processed and analyzed large-scale eCLIP, ChIP-seq, RNA-seq, ATAC-seq, and conservation
-                        datasets from ENCODE and NCBI to interrogate enhancer-RBP interactions across roughly 700
-                        genomic loci.
-                    </p>
-                    <ul class="detail-list">
-                        <li>Observed about 30% concordance between ChIP and eCLIP peaks in top super enhancers.</li>
-                        <li>Built a reproducible end-to-end bioinformatics pipeline for QC, alignment, peak calling, annotation, and visualization.</li>
-                        <li>Used Bedtools, bigWig utilities, and the UCSC Genome Browser to support scalable downstream reporting.</li>
-                    </ul>
-                </article>
+            <section class="project-tabs" aria-label="Project categories">
+                <div class="tab-list" role="tablist" aria-label="Project categories">
+                    <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="ml-ai">Machine Learning and Generative AI</button>
+                    <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="bioinformatics">Bioinformatics</button>
+                    <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="robotics">Robotics and Automation</button>
+                </div>
 
-                <article class="case-card">
-                    <img class="visual-thumb" src="assets/project-single-cell.svg" alt="Single-cell sketching project visual">
-                    <div class="case-meta">
-                        <span>Single-Cell</span>
-                        <span>Benchmarking</span>
-                    </div>
-                    <h2>Sketch-Based Analysis of scRNA-seq Data</h2>
-                    <p>
-                        Engineered and benchmarked six sketching strategies on a 68k PBMC single-cell RNA-seq dataset
-                        to evaluate rare cell capture and transcriptional diversity retention under aggressive
-                        subsampling.
-                    </p>
-                    <ul class="detail-list">
-                        <li>Compared uniform, geometric, k-means, kernel herding, hashing, and PCA-guided sketching approaches.</li>
-                        <li>Built a variance-aware PCA-guided method that reduced data volume by 90% while preserving all biological clusters.</li>
-                        <li>Recovered 172 of 193 rare cells, enabling scalable transcriptomic analysis on standard hardware.</li>
-                    </ul>
-                </article>
+                <div class="tab-panel active" role="tabpanel" data-panel="ml-ai">
+                    <article class="case-card">
+                        <img class="visual-thumb" src="assets/project-single-cell.svg" alt="Single-cell sketching project visual">
+                        <div class="case-meta">
+                            <span>Machine Learning</span>
+                            <span>Single-Cell</span>
+                        </div>
+                        <h2>Sketch-Based Analysis of scRNA-seq Data</h2>
+                        <p>
+                            Engineered and benchmarked six sketching strategies on a 68k PBMC single-cell RNA-seq dataset to evaluate rare cell capture and transcriptional diversity retention.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Compared uniform, geometric, k-means, kernel herding, hashing, and PCA-guided sketching approaches.</li>
+                            <li>Built a variance-aware PCA-guided method that reduced data volume by 90% while preserving all biological clusters.</li>
+                            <li>Recovered 172 of 193 rare cells, enabling scalable transcriptomic analysis on standard hardware.</li>
+                        </ul>
+                    </article>
 
-                <article class="case-card">
-                    <img class="visual-thumb" src="assets/project-neurogenomics.svg" alt="Neurogenomics project visual">
-                    <div class="case-meta">
-                        <span>Neurogenomics</span>
-                        <span>Machine Learning</span>
-                    </div>
-                    <h2>Genomics and Epigenetics of the Brain</h2>
-                    <p>
-                        Analyzed single-cell NGS datasets with Python and R to study neural epigenetic states through
-                        clustering, dimensionality reduction, transcription factor binding analysis, and statistical
-                        comparison.
-                    </p>
-                    <ul class="detail-list">
-                        <li>Conducted integrated analysis of neurons, astrocytes, oligodendrocytes, and microglial cells.</li>
-                        <li>Applied CNNs and SVMs to identify molecular and functional differences between neural cell types.</li>
-                        <li>Reached classification accuracy of 91% while linking patterns back to biological interpretation.</li>
-                    </ul>
-                </article>
+                    <article class="case-card">
+                        <img class="visual-thumb" src="assets/project-neurogenomics.svg" alt="Neurogenomics project visual">
+                        <div class="case-meta">
+                            <span>Machine Learning</span>
+                            <span>Neurogenomics</span>
+                        </div>
+                        <h2>Genomics and Epigenetics of the Brain</h2>
+                        <p>
+                            Applied clustering, dimensionality reduction, statistical analysis, CNNs, and SVMs to single-cell NGS datasets for neural epigenetic state analysis.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Analyzed neurons, astrocytes, oligodendrocytes, and microglial cells using Python and R.</li>
+                            <li>Identified molecular and functional differences between neural cell types.</li>
+                            <li>Reached classification accuracy of 91% while linking patterns back to biological interpretation.</li>
+                        </ul>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-meta">
+                            <span>Generative AI</span>
+                            <span>Multi-Omics</span>
+                        </div>
+                        <h2>GPU-Accelerated Multi-Omics Modeling</h2>
+                        <p>
+                            Co-led a CMU BioHackathon project focused on GPU-accelerated multi-omics modeling for complex genotype-phenotype analysis.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Contributed to a collaborative hackathon project recognized for most innovative project and best teamwork.</li>
+                            <li>Explored ML approaches for multimodal computational biology problems using public datasets.</li>
+                            <li>Work contributed to a 2025 preprint listed on the Publications page.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="tab-panel" role="tabpanel" data-panel="bioinformatics">
+                    <article class="case-card">
+                        <img class="visual-thumb" src="assets/project-regulatory-genomics.svg" alt="Regulatory genomics project visual">
+                        <div class="case-meta">
+                            <span>NGS Analysis</span>
+                            <span>Regulatory Genomics</span>
+                        </div>
+                        <h2>Super Enhancer and RNA-Binding Protein Interaction Analysis</h2>
+                        <p>
+                            Processed and analyzed eCLIP, ChIP-seq, RNA-seq, ATAC-seq, and conservation datasets from ENCODE and NCBI to interrogate enhancer-RBP interactions across roughly 700 genomic loci.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Observed about 30% concordance between ChIP and eCLIP peaks in top super enhancers.</li>
+                            <li>Built a reproducible pipeline for QC, alignment, peak calling, annotation, and visualization.</li>
+                            <li>Used Bedtools, bigWig utilities, and the UCSC Genome Browser for scalable downstream reporting.</li>
+                        </ul>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-meta">
+                            <span>Structural Bioinformatics</span>
+                            <span>Sequence Modeling</span>
+                        </div>
+                        <h2>Protein-Metal Binding Residue Modeling</h2>
+                        <p>
+                            Built a large-scale dataset of roughly 100,000 protein-metal binding residue entries and designed high-throughput sequence-structure analysis pipelines.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Integrated pre-trained embeddings with state-space models for biologically relevant protein-metal interaction classification.</li>
+                            <li>Achieved 94% classification accuracy in the structural bioinformatics internship project.</li>
+                            <li>Adapted workflow modules for production-scale NGS and larger pipeline systems.</li>
+                        </ul>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-meta">
+                            <span>Algorithms</span>
+                            <span>Phylogenetics</span>
+                        </div>
+                        <h2>Phylogenetic Tree-Space Search</h2>
+                        <p>
+                            Developed randomized algorithms for phylogenetic tree inference and optimized the Phylogenetic Topographer for faster search and visualization.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Reduced runtime by 66% for large-scale evolutionary analysis tasks.</li>
+                            <li>Implemented a graph-based data structure for tree-space graph search.</li>
+                            <li>Applied the work to problems relevant to genomic epidemiology, antibiotic resistance, and lateral gene transfer.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="tab-panel" role="tabpanel" data-panel="robotics">
+                    <article class="case-card">
+                        <div class="case-meta">
+                            <span>Robotics</span>
+                            <span>Autonomy</span>
+                        </div>
+                        <h2>AerialRobotics IITK Software Stack</h2>
+                        <p>
+                            Worked on software infrastructure for a custom fleet of aerial robots, with plug-and-play modules for robotics experimentation and competition work.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Led a 30-member team working on drone racing, planning libraries, swarm-based systems, and scene reconstruction.</li>
+                            <li>Developed modular software components for aerial robotics projects.</li>
+                            <li>Mentored introductory projects for new members on map generation.</li>
+                        </ul>
+                    </article>
+
+                    <article class="case-card">
+                        <div class="case-meta">
+                            <span>Automation</span>
+                            <span>Mapping</span>
+                        </div>
+                        <h2>Map Generation Mentorship Projects</h2>
+                        <p>
+                            Mentored junior members through introductory mapping projects that connected autonomy fundamentals with practical robotics implementation.
+                        </p>
+                        <ul class="detail-list">
+                            <li>Helped new members build intuition for map generation and robotics software workflows.</li>
+                            <li>Connected planning and scene reconstruction concepts to hands-on aerial robot projects.</li>
+                            <li>Supported onboarding for a larger student robotics team.</li>
+                        </ul>
+                    </article>
+                </div>
             </section>
         </main>
 
         <footer class="site-footer">
-            <p>Selected computational biology projects.</p>
+            <p>Selected projects across ML, data science, bioinformatics, and robotics.</p>
             <div class="footer-links">
                 <a href="index.html">Home</a>
                 <a href="experience.html">Experience</a>
-                <a href="blog.html">Blog</a>
+                <a href="publications.html">Publications</a>
             </div>
         </footer>
     </div>
